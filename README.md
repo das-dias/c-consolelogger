@@ -5,10 +5,10 @@ Version : 1.0
 ConsoleLogger is a library written in C to allow for the quick and practical output of coloured messages to the console terminal.
 
 ## The library supports:
-- Red colour for error messages
-- Yellow colour for warning messages
-- White colour for normal, default messages
-  
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15` - Red colour for error messages
+- ![#ffea00](https://via.placeholder.com/15/ffea00/000000?text=+) `#ffea00` - Yellow colour for warning messages
+- ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) `#ffffff` - White colour for normal, default messages
+
 ## Dependencies:
 - stdio.h (standard Input/Output C library)
 - string.h (standard string manipulation library)
@@ -21,7 +21,7 @@ ConsoleLogger is a library written in C to allow for the quick and practical out
 
 int main(void)
 {
-    /* console logger constructors */
+    /* console logger constructor */
     console* logger;
     logger = console_alloc();
     
@@ -40,7 +40,7 @@ int main(void)
     console_log("This is a more complicated method of doing an error (Do not recomend)!\n", 
     logger->ERR_LOG, logger->DEFAULT_LOG);
     
-    /* free memory */
+    /* free memory - destructor */
     console_free(logger);
     //good practice
     logger = NULL;
@@ -50,10 +50,4 @@ int main(void)
 ```
 
 ### Output:
-```diff
--this is an error 1!
-!This is a warning 2 ,Oh yeah it is! 
-This is just a message!
-After producing your log messages, terminal colour returns to normal!
--This is a more complicated method of doing an error (Do not recomend)!
-```
+![output terminal](./README-DEP/screenshot_terminal_consoleloggger.png "terminal output")
