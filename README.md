@@ -52,7 +52,7 @@ int main(void)
 ### Output:
 ```diff
 -this is an error 1!
-+This is a warning 2 ,Oh yeah it is! 
+!This is a warning 2 ,Oh yeah it is! 
 This is just a message!
 After producing your log messages, terminal colour returns to normal!
 -This is a more complicated method of doing an error (Do not recomend)!
