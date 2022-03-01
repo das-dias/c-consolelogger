@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/dasdias/SoftwareProjects/c-consolelogger'
+make: Nothing to be done for `all'.
+ 
+make: Leaving directory `/Users/dasdias/SoftwareProjects/c-consolelogger'
+ 
