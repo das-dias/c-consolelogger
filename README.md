@@ -4,6 +4,7 @@ Version : 1.0
 
 ConsoleLogger is a library written in C to allow for the quick and practical output of coloured messages to the console terminal.
 
+This work is licensed under MIT Open Source Software license.
 ## The library supports:
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15` - Red colour for error messages
 - ![#ffea00](https://via.placeholder.com/15/ffea00/000000?text=+) `#ffea00` - Yellow colour for warning messages
